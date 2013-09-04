@@ -1,29 +1,72 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
-
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
 body {
   font-family: 'PT Sans', sans-serif;
-}
-.body-shadow {
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   font-weight: 700;
-  color: #fff;
+  font-size: 30px;
+  color: #8a8380;
 }
 h1 {
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  color: #fff;
-  font-weight: 700;
+  text-align: center;
+  margin-bottom: -0.5px;
 }
-h2 {
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  color: #fff;
-  font-weight: 700;
+.slidesjs-previous,
+.slidesjs-next {
+  color: #e9e7e6;
+  text-decoration: none;
+  font-size: 60px;
+  position: absolute;
+  top: 300px;
+  margin: 0 auto;
+  display: block;
+  z-index: 100;
+  padding: 10px;
+  opacity: .5;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.slidesjs-previous:hover,
+.slidesjs-next:hover {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.slidesjs-next {
+  right: 10px;
+}
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 600px;
+  height: 600px;
+  padding: 10px 10px 80px 10px;
+  background-color: #e9e7e6;
+}
+.slidesjs-pagination {
+  box-sizing: border-box;
+  padding: 0;
+  list-style: none;
+  width: 160px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  float: none;
+}
+.slidesjs-pagination-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.slidesjs-pagination-item a {
+  text-align: center;
+  text-decoration: none;
+  color: #c6c2c1;
   font-size: 20px;
 }
-p {
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  font-weight: 700;
-  color: #fff;
+.slidesjs-pagination-item a.active {
+  color: #8a8380;
 }
 /*!
  *  Font Awesome 3.2.1
@@ -1518,28 +1561,4 @@ a .icon-flip-vertical:before {
 }
 .icon-renren:before {
   content: "\f18b";
-}
-body {
-  font-family: 'PT Sans', sans-serif;
-}
-.body-shadow {
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  font-weight: 700;
-  color: #fff;
-}
-h1 {
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  color: #fff;
-  font-weight: 700;
-}
-h2 {
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  color: #fff;
-  font-weight: 700;
-  font-size: 20px;
-}
-p {
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  font-weight: 700;
-  color: #fff;
 }

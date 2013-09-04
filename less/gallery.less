@@ -1,28 +1,59 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
-
-@font-sans-family: 'PT Sans', sans-serif;
-
-body{
-	font-family: @font-sans-family;
+.slidesjs-previous, .slidesjs-next{
+	color: #e9e7e6;
+	text-decoration: none;
+	font-size: 60px;
+	position: absolute;
+	top: 300px;
+	margin: 0 auto;
+	display: block;
+	z-index: 100;
+	padding: 10px;
+	opacity: .5;
+	.transition(1s);
+	&:hover{
+		opacity: 1;
+		.transition(.5s);
+	}
 }
 
-.body-shadow{
-	.text-shadow();
-	font-weight: 700;
-	color:#fff;
+.slidesjs-next{
+	right: 10px;
 }
 
-h1{
-	.body-shadow;
-	font-weight: 700;
+.container{
+	margin: 0 auto;
+	position: relative;
+	width: 600px;
+	height: 600px;
+	padding: 10px 10px 80px 10px;
+	background-color: #e9e7e6;
+
 }
 
-h2{
-	.body-shadow;
-	font-weight: 700;
+.slidesjs-pagination{
+	box-sizing:border-box;
+	padding: 0;
+	list-style: none;
+	width: 160px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+	float: none;	
+}
+
+.slidesjs-pagination-item{
+	
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.slidesjs-pagination-item a{
+	text-align: center;
+	text-decoration: none;
+	color: #c6c2c1;
 	font-size: 20px;
 }
 
-p{
-	.body-shadow;
+.slidesjs-pagination-item a.active{
+	color:#8a8380;
 }
